@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-json-parse-helpfulerror-$1/ \
+ https://github.com/smikes/json-parse-helpfulerror/tags .*/archive/.*/v?([\d\.]+).tar.gz

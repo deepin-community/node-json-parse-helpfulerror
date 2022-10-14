@@ -1,0 +1,24 @@
+Source: node-json-parse-helpfulerror
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-jju <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-json-parse-helpfulerror
+Vcs-Git: https://salsa.debian.org/js-team/node-json-parse-helpfulerror.git
+Homepage: https://github.com/smikes/json-parse-helpfulerror
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-json-parse-helpfulerror
+Architecture: all
+Depends: ${misc:Depends}
+ , node-jju
+Description: drop-in replacement for JSON.parse that uses `jju`
+ A drop-in replacement for `JSON.parse` that uses  <https://npmjs.org/jju>
+ to provide more useful error messages in the event of a parse error.
+ .
+ Node.js is an event-based server-side JavaScript engine.

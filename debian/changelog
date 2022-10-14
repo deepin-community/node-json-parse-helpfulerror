@@ -1,0 +1,42 @@
+node-json-parse-helpfulerror (1.0.3-3) unstable; urgency=medium
+
+  * team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Remove constraints unnecessary since stretch:
+    + node-json-parse-helpfulerror: Drop versioned constraint on node-jju in
+      Depends.
+  * Bump debhelper from old 9 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto install
+
+ -- Yadd <yadd@debian.org>  Sat, 13 Nov 2021 21:56:38 +0100
+
+node-json-parse-helpfulerror (1.0.3-2) unstable; urgency=medium
+
+  * Move to main (It was mistakenly added to contrib because it was in
+    dependency chain for jison)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 20 Oct 2016 13:55:00 +0530
+
+node-json-parse-helpfulerror (1.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #840210)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 09 Oct 2016 21:01:02 +0530
